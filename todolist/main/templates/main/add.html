@@ -1,0 +1,16 @@
+{% extends 'main/base.html'%}
+
+{% block title%}
+    Add page
+{%endblock%}
+
+{% block content%}
+    <h2>Новый</h2>
+    <form method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="IFdny0MSG4kAlHqLC2qLjajlGgurbm38pch3pR3XnRYocy5z4MIYaT0C1UgCHqe5">
+        <input type="text" name="title" class="form-control" placeholder="Придумайте название" maxlength="50" required="" id="id_title"><br>
+        <textarea name="task" cols="40" rows="10" class="form-control" placeholder="Введите описание" required="" id="id_task"></textarea><br>
+        <button type="submit">Добавить</button>
+    </form>
+{%endblock%}
+
